@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.component';
+import { LoginComponent } from './components/login/login.ts';
 import { RegisterComponent } from './components/register/register.component';
 import { NoteListComponent } from './components/note-list/note-list.component';
 import { NoteEditorComponent } from './components/note-editor/note-editor.component';
