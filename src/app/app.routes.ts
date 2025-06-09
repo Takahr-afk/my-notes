@@ -1,9 +1,9 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './components/login/login.ts';
-import { RegisterComponent } from './components/register/register.component';
-import { NoteListComponent } from './components/note-list/note-list.component';
-import { NoteEditorComponent } from './components/note-editor/note-editor.component';
-import { NoteDetailComponent } from './components/note-detail/note-detail.component';
+import { LoginComponent } from './components/login/login';
+import { RegisterComponent } from './components/register/register';
+import { NoteListComponent } from './components/note-list/note-list';
+import { NoteEditorComponent } from './components/note-editor/note-editor';
+import { NoteDetailComponent } from './components/note-detail/note-detail';
 import { authGuard } from './guards/auth.guard';
 
 export const routes: Routes = [

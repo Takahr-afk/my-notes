@@ -6,9 +6,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class AuthService {
-  user$ = user(this.auth);
+user$: Observable<any>;
 
-  constructor(private auth: Auth) {}
+  constructor(private auth: Auth) {
+    this.user$ = user(this.auth);
+  }
 
   async login(email: string, password: string): Promise<void> {
     await signInWithEmailAndPassword(this.auth, email, password);

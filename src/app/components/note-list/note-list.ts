@@ -8,8 +8,8 @@ import { RouterModule } from '@angular/router';
   selector: 'app-note-list',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './note-list.component.html',
-  styleUrls: ['./note-list.component.css']
+  templateUrl: './note-list.html',
+  styleUrls: ['./note-list.css']
 })
 export class NoteListComponent implements OnInit {
   notes: Note[] = [];
