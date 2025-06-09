@@ -1,13 +1,21 @@
+<!DOCTYPE html>
+<html>
 <header>
   <h1>{{ title }}</h1>
-  <!-- Hier können Sie Navigation/Links einfügen -->
   <nav>
-    <a routerLink="/login">Login</a>
-    <a routerLink="/register">Register</a>
-    <a routerLink="/notes">Notes</a>
+    <ng-container *ngIf="!(authService.user$ | async)">
+      <a routerLink="/login">Login</a>
+      <a routerLink="/register">Register</a>
+    </ng-container>
+    <ng-container *ngIf="authService.user$ | async">
+      <a routerLink="/notes">Notes</a>
+      <button (click)="logout()">Logout</button>
+    </ng-container>
   </nav>
 </header>
 
 <main>
+  <app-root></app-root>
   <router-outlet></router-outlet>
 </main>
+</html>

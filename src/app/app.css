@@ -5,6 +5,10 @@ header {
 
 nav {
   margin-top: 1rem;
+  display: flex;
+  gap: 1rem;
+  padding: 1rem;
+
 }
 
 nav a {
@@ -17,6 +21,12 @@ nav a:hover {
   color: #000;
   text-decoration: underline;
 }
+
+nav button {
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+}
+
 
 main {
   padding: 2rem;

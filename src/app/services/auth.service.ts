@@ -1,6 +1,8 @@
 import { Injectable } from '@angular/core';
 import { Auth, signInWithEmailAndPassword, createUserWithEmailAndPassword, signOut, user } from '@angular/fire/auth';
 import { Observable } from 'rxjs';
+import {Router} from '@angular/router';
+import { User } from '@angular/fire/auth';
 
 @Injectable({
   providedIn: 'root'
