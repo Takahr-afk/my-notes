@@ -5,3 +5,7 @@ ToDo:
 
 - Implement Auth service
 - Implement Note Service
+
+
+Questions:
+when and how do i initialize firebaseApp?
